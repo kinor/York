@@ -183,8 +183,6 @@ When we overflow the buffer:
 sudo apt-get update
 sudo apt-get install gdb
 
-# On Mac
-brew install gdb
 ```
 
 ### Start GDB
@@ -210,6 +208,7 @@ When it stops, examine memory:
 ```
 
 This shows you the exact memory addresses and how the variables are laid out.
+Quit gdb
 
 ---
 
