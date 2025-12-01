@@ -236,42 +236,34 @@ Quit anyway? (y or n) y
 ```c
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include <unistd.h>
 
 void secret_function() {
-    printf("\n🔓 SECRET FUNCTION EXECUTED! 🔓\n");
-    printf("This function was NOT supposed to be called!\n");
-    printf("The buffer overflow changed the program's execution flow.\n\n");
+    printf("\n");
+    printf("*************************************************\n");
+    printf("*   CONGRATULATIONS! You've called the secret   *\n");
+    printf("*   function through a buffer overflow attack!  *\n");
+    printf("*************************************************\n");
+    printf("\n");
 }
 
-void check_password() {
+void vulnerable_function() {
     char buffer[16];
-    int authenticated = 0;
-    
-    printf("Enter password: ");
+    printf("Enter some text: ");
     fflush(stdout);
     
-    // VULNERABLE: reads more data than buffer can hold!
+    // Vulnerable: reads more than buffer size!
     read(STDIN_FILENO, buffer, 100);
     
-    if (strcmp(buffer, "pass123\n") == 0) {
-        authenticated = 1;
-    }
-    
-    if (authenticated) {
-        printf("✓ Access granted!\n");
-    } else {
-        printf("✗ Access denied!\n");
-    }
+    printf("You entered: %s\n", buffer);
 }
 
 int main() {
-    printf("=== Buffer Overflow Demonstration ===\n");
-    printf("Buffer size: 16 bytes\n\n");
-    
-    check_password();
-    
-    printf("Program ending normally.\n");
+    printf("Buffer Overflow Demonstration\n");
+    printf("==============================\n");
+    vulnerable_function();
+    printf("Program completed normally.\n");
     return 0;
 }
 ```
