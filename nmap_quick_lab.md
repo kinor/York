@@ -178,16 +178,5 @@ nmap -F <target>           # Fast scan (100 common ports)
 
 ---
 
-## Submission
-
-Take a screenshot showing:
-1. Your nmap scan of localhost
-2. Your nmap scan of scanme.nmap.org
-3. Answers to the discussion questions
-
-**Time to complete:** 5 minutes  
-**Points:** 5 (participation credit)
-
----
 
 **Done!** You now know basic network reconnaissance with Nmap.
