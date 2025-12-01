@@ -14,7 +14,7 @@ By completing this lab, you will:
 
 ---
 
-## Objective
+## Overall Objective
 Understand how buffer overflow vulnerabilities work by exploiting a simple C program in a controlled environment, progressing from simple variable corruption to advanced function hijacking.
 
 ---
