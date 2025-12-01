@@ -351,18 +351,10 @@ Buffer Overflow Demonstration
 ==============================
 Enter some text: You entered: AAAAAAAAAAAAAAAAAAAAAAAA␦@
 
-*************************************************
-*   CONGRATULATIONS! You've called the secret   *
-*   function through a buffer overflow attack!  *
-*************************************************
-=== Buffer Overflow Demonstration ===
-Buffer size: 16 bytes
-
-Enter password: ✗ Access denied!
-
-🔓 SECRET FUNCTION EXECUTED! 🔓
-This function was NOT supposed to be called!
-The buffer overflow changed the program's execution flow.
+***************************************************
+* 🔓 CONGRATULATIONS! You've called the secret 🔓 *
+*   function through a buffer overflow attack!    *
+***************************************************
 ```
 
 **Success!** You've hijacked the program's control flow!
