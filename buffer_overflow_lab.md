@@ -243,8 +243,8 @@ void secret_function() {
     printf("\n");
     printf("***************************************************\n");
     printf("* 🔓 CONGRATULATIONS! You've called the secret 🔓 *\n");
-    printf("*   function through a buffer overflow attack!   *\n");
-    printf("*************************************************\n");
+    printf("*   function through a buffer overflow attack!    *\n");
+    printf("***************************************************\n");
     printf("\n");
 }
 
