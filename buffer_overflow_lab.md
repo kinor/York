@@ -346,6 +346,8 @@ python3 exploit.py | ./vulnerable_advanced
 ```
 
 **Expected result:**
+<img width="591" height="167" alt="image" src="https://github.com/user-attachments/assets/87daf608-b5a1-4b1b-978d-ed4b2b8b8f13" />
+
 ```
 Buffer Overflow Demonstration
 ==============================
